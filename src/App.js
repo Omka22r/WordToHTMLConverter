@@ -4,7 +4,7 @@ import Converter from './components/WordToHtmlConverter';
 
 function App() {
   return (
-    <Container style={{ height: '100%', minHeight: '100vh' }} className="bg-dark d-flex p-0 m-0 flex-column justify-content-center col-12 h-100">
+    <Container style={{ height: '100%', minHeight: '100vh' }} className="bg-dark d-flex p-0 m-0 flex-column justify-content-start col-12 h-100">
         <Converter/>
     </Container>
   );

@@ -33,12 +33,12 @@ class PreviewModal extends Component {
                         dangerouslySetInnerHTML={{ __html: this.props.data }} />
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="outline-secondary" className="mr-3"
+                    <Button style={{ letterSpacing: 2 }} size="md" variant="outline-secondary" className="mr-3"
                     onClick={() => this.props.download()} 
                     >
                         Download {<Download className="ml-3" size={23} />}
                     </Button>
-                    <Button onClick={() => this.props.closeModal()}>Close</Button>
+                    <Button style={{ letterSpacing: 2 }} size="md" onClick={() => this.props.closeModal()}>Close</Button>
                 </Modal.Footer>
             </Modal>
         )

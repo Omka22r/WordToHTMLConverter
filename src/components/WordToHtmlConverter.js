@@ -80,14 +80,13 @@ class Converter extends Component {
                             {this.state.converting ?
                             <Spinner className="mx-auto" animation="border" />
                             :
-                                <Row className="d-flex flex-column justify-content-between">
+                                <Row className="d-flex col-12 flex-row justify-content-between">
                                     <Button disabled={this.state.newFile === null} variant="info" onClick={() => this.setState({ showPreview: true })} className="mt-3">
                                         Preview <CodeSquare className="ml-3" size={23} /></Button>
                                     <Button disabled={this.state.newFile === null} variant="outline-secondary" className="mt-3"
                                         onClick={() => this.download(this.state.newFile.name.split('.').slice(0, -1).join('.'), this.state.html)} >
                                         Download <Download className="ml-3" size={23} /></Button>
                                 </Row>}
-
                         </Row>
                     <PreviewModal
                         download={() => this.download(this.state.newFile.name.split('.').slice(0, -1).join('.'), this.state.html)}

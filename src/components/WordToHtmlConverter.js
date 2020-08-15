@@ -65,7 +65,7 @@ class Converter extends Component {
         return (
             <Row style={{ maxHeight: '100vh' }} className="col-12 mt-5 m-0 p-0 d-flex flex-column">
                 <Container  className="bg-light mt-4 p-5 d-flex text-dark flex-column justify-content-around col-lg-4 col-md-8">
-                    <h3 className="text-info" style={{ letterSpacing: 3 }}>Word to HTML Converter</h3>
+                    <h3 className="text-warning" style={{ letterSpacing: 3 }}>Word to HTML Converter</h3>
                     <Form className="mt-4">
                         <Form.Group>
                             <Form.Control

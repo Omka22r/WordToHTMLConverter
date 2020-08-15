@@ -36,7 +36,7 @@ class PreviewModal extends Component {
                     <Button style={{ letterSpacing: 2 }} size="md" variant="outline-secondary" className="mr-3"
                     onClick={() => this.props.download()} 
                     >
-                        Download {<Download className="ml-3" size={23} />}
+                        Download {<Download className="ml-2" size={23} />}
                     </Button>
                     <Button style={{ letterSpacing: 2 }} size="md" onClick={() => this.props.closeModal()}>Close</Button>
                 </Modal.Footer>
